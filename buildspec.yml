@@ -82,15 +82,14 @@ phases:
                         cpu: 500m   #HPA
                       requests:     #HPA
                         cpu: 200m   #HPA
-                    readinessProbe:
-                      httpGet:
-                        path: /actuator/health
-                        port: 8080
-                      initialDelaySeconds: 10
-                      timeoutSeconds: 2
-                      periodSeconds: 5
-                      failureThreshold: 10
-                        
+                    #readinessProbe:
+                    #  httpGet:
+                    #    path: /actuator/health
+                    #    port: 8080
+                    #  initialDelaySeconds: 10
+                    #  timeoutSeconds: 2
+                    #  periodSeconds: 5
+                    #  failureThreshold: 10
           EOF
 #cache:
   #paths:
